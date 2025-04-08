@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744144699331" clover="3.2.0">
-  <project timestamp="1744144699331" name="All files">
+<coverage generated="1744146081562" clover="3.2.0">
+  <project timestamp="1744146081562" name="All files">
     <metrics statements="10685" coveredstatements="2320" conditionals="7676" coveredconditionals="819" methods="1888" coveredmethods="439" elements="20249" coveredelements="3578" complexity="0" loc="10685" ncloc="10685" packages="166" files="441" classes="441"/>
     <package name="carbon-components-react.src">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -12204,9 +12204,9 @@
         <line num="71" count="0" type="stmt"/>
         <line num="74" count="14" type="stmt"/>
         <line num="75" count="14" type="stmt"/>
-        <line num="76" count="80" type="stmt"/>
-        <line num="77" count="80" type="stmt"/>
-        <line num="78" count="80" type="stmt"/>
+        <line num="76" count="82" type="stmt"/>
+        <line num="77" count="82" type="stmt"/>
+        <line num="78" count="82" type="stmt"/>
         <line num="80" count="14" type="stmt"/>
       </file>
       <file name="jscodeshift.js" path="/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/upgrade/src/jscodeshift.js">
