@@ -38,3 +38,8 @@ build().catch((error) => {
   console.log(error);
   process.exit(1);
 });
+
+async function buildStyles() {
+  const { files } = require('@carbon/styles/files');
+  const fs = require('fs-extra');
+  const path = require}
