@@ -19,8 +19,7 @@ jobs:
 
       - name: Install Dependencies and test
         run: |
-          yarn cache clean
-          yarn install --refresh-lockfile
+          yarn install --immutable
           yarn build
           yarn test
 
