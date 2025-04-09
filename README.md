@@ -31,7 +31,9 @@
   <a href="https://discord.gg/J7JEUEkTRX">
     <img src="https://img.shields.io/discord/689212587170201628?color=5865F2" alt="Chat with us on Discord">
   </a>
+<a href='https://coveralls.io/github/velgersdyk25/carbon-coverall-poc'><img src='https://coveralls.io/repos/github/velgersdyk25/carbon-coverall-poc/badge.svg' alt='Coverage Status' /></a>
 </p>
+[![Coverage Status](https://coveralls.io/repos/github/velgersdyk25/carbon-coverall-poc/badge.svg)](https://coveralls.io/github/velgersdyk25/carbon-coverall-poc)
 
 ## Getting started
 
