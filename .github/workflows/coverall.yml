@@ -22,16 +22,17 @@ jobs:
       - name: Coveralls
         uses: coverallsapp/github-action@v2
         with:
+          parallel: true
           debug: true
         env:
-          COVERALLS_REPO_TOKEN: ngkzf3Zrr9bZechNKKuVQxEUdUITo1sKB
+          ## COVERALLS_REPO_TOKEN: ngkzf3Zrr9bZechNKKuVQxEUdUITo1sKB
           github-token: ${{ secrets.TOKEN }}
 
   finish:
     needs: build
     if: ${{ always() }}
+    runs-on: ubuntu-latest
     steps:
-
       - name: Coveralls Finished
         uses: coverallsapp/github-action@v2
         with:
