@@ -1,4 +1,4 @@
-on: ["push", "pull_request"]
+on: ["push"]
 
 name: Test Coveralls
 
@@ -36,3 +36,4 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           parallel-finished: true
+          debug: true
