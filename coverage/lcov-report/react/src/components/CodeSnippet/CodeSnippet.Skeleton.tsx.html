@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -168,26 +168,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -196,10 +186,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -238,21 +238,21 @@ export interface CodeSnippetSkeletonProps
   type?: 'single' | 'multi' | undefined;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >CodeSnippetSkeleton(</span>{
+function CodeSnippetSkeleton({
   className: containerClassName,
-  type = <span class="branch-0 cbranch-no" title="branch not covered" >'single',</span>
+  type = 'single',
   ...rest
 }) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const className = <span class="cstat-no" title="statement not covered" >cx(containerClassName, {</span>
+  const prefix = usePrefix();
+  const className = cx(containerClassName, {
     [`${prefix}--snippet`]: true,
     [`${prefix}--skeleton`]: true,
     [`${prefix}--snippet--single`]: type === 'single',
     [`${prefix}--snippet--multi`]: type === 'multi',
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (type === 'single') {</span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  if (type === 'single') {
+    return (
       &lt;div className={className} {...rest}&gt;
         &lt;div className={`${prefix}--snippet-container`}&gt;
           &lt;span /&gt;
@@ -261,8 +261,8 @@ function <span class="fstat-no" title="function not covered" >CodeSnippetSkeleto
     );
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (type === 'multi') {</span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (type === 'multi') {
+    return (
       &lt;div className={className} {...rest}&gt;
         &lt;div className={`${prefix}--snippet-container`}&gt;
           &lt;span /&gt;
@@ -274,7 +274,7 @@ function <span class="fstat-no" title="function not covered" >CodeSnippetSkeleto
   }
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >CodeSnippetSkeleton.propTypes = {</span>
+CodeSnippetSkeleton.propTypes = {
   /**
    * Specify an optional className to be applied to the container node
    */
@@ -295,7 +295,7 @@ export { CodeSnippetSkeleton };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

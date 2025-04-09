@@ -1,0 +1,26 @@
+on: ["push", "pull_request"]
+
+name: Test Coveralls
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Git Init
+        run: git init
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.12.0
+
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v2.3.6
+        with:
+          ## COVERALLS_REPO_TOKEN: ngkzf3Zrr9bZechNKKuVQxEUdUITo1sKB
+          github-token: ${{ github.token }}

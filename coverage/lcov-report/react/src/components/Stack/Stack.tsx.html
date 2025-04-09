@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">90.9% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">90.9% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -217,9 +217,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">72x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -272,7 +272,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -281,28 +281,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -353,9 +353,9 @@ import { usePrefix } from '../../internal/usePrefix';
  * The steps in the spacing scale
  * @type {Array&lt;number&gt;}
  */
-const SPACING_STEPS = <span class="cstat-no" title="statement not covered" >Array.from({ length: spacing.length - 1 }).map(</span>
-<span class="fstat-no" title="function not covered" >  (_</span>, step) =&gt; {
-<span class="cstat-no" title="statement not covered" >    return step + 1;</span>
+const SPACING_STEPS = Array.from({ length: spacing.length - 1 }).map(
+  (_, step) =&gt; {
+    return step + 1;
   }
 );
 &nbsp;
@@ -408,28 +408,28 @@ export interface StackProps extends React.HTMLAttributes&lt;HTMLElement&gt; {
  * - https://paste.twilio.design/layout/stack/
  * - https://github.com/Workday/canvas-kit/blob/f2f599654876700f483a1d8c5de82a41315c76f1/modules/labs-react/layout/lib/Stack.tsx
  */
-const Stack = <span class="cstat-no" title="statement not covered" >React.forwardRef&lt;React.ReactNode, StackProps&gt;(</span>
-  function <span class="fstat-no" title="function not covered" >Stack(</span>props, ref) {
+const Stack = React.forwardRef&lt;React.ReactNode, StackProps&gt;(
+  function Stack(props, ref) {
     const {
-      as: BaseComponent = <span class="branch-0 cbranch-no" title="branch not covered" >'div',</span>
+      as: BaseComponent = 'div',
       children,
       className: customClassName,
       gap,
-      orientation = <span class="branch-0 cbranch-no" title="branch not covered" >'vertical',</span>
+      orientation = 'vertical',
       ...rest
-    } = <span class="cstat-no" title="statement not covered" >props;</span>
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-    const className = <span class="cstat-no" title="statement not covered" >cx(customClassName, {</span>
+    } = props;
+    const prefix = usePrefix();
+    const className = cx(customClassName, {
       [`${prefix}--stack-${orientation}`]: true,
       [`${prefix}--stack-scale-${gap}`]: typeof gap === 'number',
     });
-    const style = <span class="cstat-no" title="statement not covered" >{ ...rest.style };</span>
+    const style = { ...rest.style };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof gap === 'string') {</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof gap === 'string') {
 <span class="cstat-no" title="statement not covered" >      style[`--${prefix}-stack-gap`] = gap;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
       // eslint-disable-next-line react/forbid-component-props
       &lt;BaseComponent {...rest} ref={ref} className={className} style={style}&gt;
         {children}
@@ -438,7 +438,7 @@ const Stack = <span class="cstat-no" title="statement not covered" >React.forwar
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >Stack.propTypes = {</span>
+Stack.propTypes = {
   /**
    * Provide a custom element type to render as the outermost element in
    * the Stack component. By default, this component will render a `div`.
@@ -478,7 +478,7 @@ export { Stack };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

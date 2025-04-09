@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -196,26 +196,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -277,23 +277,23 @@ export interface SideNavFooterProps {
  * navigation that is a part of the UI Shell. It is responsible for handling the
  * user interaction to expand or collapse the side navigation.
  */
-function <span class="fstat-no" title="function not covered" >SideNavFooter(</span>{
+function SideNavFooter({
   assistiveText = <span class="branch-0 cbranch-no" title="branch not covered" >'Toggle opening or closing the side navigation',</span>
   className: customClassName,
   expanded,
   onToggle,
 }: SideNavFooterProps) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const className = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--side-nav__footer`, customClassName);</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  const prefix = usePrefix();
+  const className = cx(`${prefix}--side-nav__footer`, customClassName);
+  return (
     &lt;footer className={className}&gt;
       &lt;button
         className={`${prefix}--side-nav__toggle`}
         type="button"
-        onClick={<span class="fstat-no" title="function not covered" >(e</span>vt) =&gt; <span class="cstat-no" title="statement not covered" >onToggle(evt)}</span>
+        onClick={(evt) =&gt; onToggle(evt)}
         title={assistiveText}&gt;
         &lt;div className={`${prefix}--side-nav__icon`}&gt;
-          {expanded ? &lt;Close size={20} /&gt; : &lt;ChevronRight size={20} /&gt;}
+          {expanded ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;Close size={20} /&gt; </span>: &lt;ChevronRight size={20} /&gt;}
         &lt;/div&gt;
         &lt;span className={`${prefix}--assistive-text`}&gt;{assistiveText}&lt;/span&gt;
       &lt;/button&gt;
@@ -301,8 +301,8 @@ function <span class="fstat-no" title="function not covered" >SideNavFooter(</sp
   );
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >SideNavFooter.displayName = 'SideNavFooter';</span>
-<span class="cstat-no" title="statement not covered" >SideNavFooter.propTypes = {</span>
+SideNavFooter.displayName = 'SideNavFooter';
+SideNavFooter.propTypes = {
   /**
    * Provide text to be read to screen readers and shown as a tooltip when
    * interacting with the toggle button in the footer
@@ -331,7 +331,7 @@ export default SideNavFooter;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

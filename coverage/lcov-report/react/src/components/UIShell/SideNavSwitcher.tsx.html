@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -216,17 +216,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -244,7 +242,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -260,8 +260,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -329,15 +329,15 @@ export interface SideNavSwitcherProps {
   options: string[];
 }
 &nbsp;
-const SideNavSwitcher = <span class="cstat-no" title="statement not covered" >forwardRef&lt;HTMLSelectElement, SideNavSwitcherProps&gt;(</span>
-  function <span class="fstat-no" title="function not covered" >SideNavSwitcher(</span>props, ref) {
-    const id = <span class="cstat-no" title="statement not covered" >useId('side-nav-switcher');</span>
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-    const { className: customClassName, labelText, onChange, options } = <span class="cstat-no" title="statement not covered" >props;</span>
-    const className = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--side-nav__switcher`, customClassName);</span>
+const SideNavSwitcher = forwardRef&lt;HTMLSelectElement, SideNavSwitcherProps&gt;(
+  function SideNavSwitcher(props, ref) {
+    const id = useId('side-nav-switcher');
+    const prefix = usePrefix();
+    const { className: customClassName, labelText, onChange, options } = props;
+    const className = cx(`${prefix}--side-nav__switcher`, customClassName);
 &nbsp;
     // Note for usage around `onBlur`: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
       &lt;div className={className}&gt;
         &lt;label htmlFor={id} className={`${prefix}--assistive-text`}&gt;
           {labelText}
@@ -356,8 +356,8 @@ const SideNavSwitcher = <span class="cstat-no" title="statement not covered" >fo
             value=""&gt;
             {labelText}
           &lt;/option&gt;
-          {options.map(<span class="fstat-no" title="function not covered" >(o</span>ption) =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;option</span>
+          {options.map((option) =&gt; (
+            &lt;option
               key={option}
               className={`${prefix}--side-nav__option`}
               value={option}&gt;
@@ -373,8 +373,8 @@ const SideNavSwitcher = <span class="cstat-no" title="statement not covered" >fo
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >SideNavSwitcher.displayName = 'SideNavSwitcher';</span>
-<span class="cstat-no" title="statement not covered" >SideNavSwitcher.propTypes = {</span>
+SideNavSwitcher.displayName = 'SideNavSwitcher';
+SideNavSwitcher.propTypes = {
   /**
    * Provide an optional class to be applied to the containing node
    */
@@ -409,7 +409,7 @@ export default SideNavSwitcher;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

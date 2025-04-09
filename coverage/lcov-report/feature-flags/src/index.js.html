@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -115,37 +115,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">120x</span>
+<span class="cline-any cline-yes">120x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
  * Copyright IBM Corp. 2015, 2023
@@ -157,37 +157,37 @@
 import { featureFlagInfo } from './generated/feature-flags';
 import { FeatureFlagScope } from './FeatureFlagScope';
 &nbsp;
-const FeatureFlags = <span class="cstat-no" title="statement not covered" >createScope();</span>
+const FeatureFlags = createScope();
 &nbsp;
-<span class="cstat-no" title="statement not covered" >for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; featureFlagInfo.length; i++) {</span>
-  const featureFlag = <span class="cstat-no" title="statement not covered" >featureFlagInfo[i];</span>
-<span class="cstat-no" title="statement not covered" >  FeatureFlags.add(featureFlag.name, featureFlag.enabled);</span>
+for (let i = 0; i &lt; featureFlagInfo.length; i++) {
+  const featureFlag = featureFlagInfo[i];
+  FeatureFlags.add(featureFlag.name, featureFlag.enabled);
 }
 &nbsp;
 export { FeatureFlags };
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >createScope(</span>flags) {
-<span class="cstat-no" title="statement not covered" >  return new FeatureFlagScope(flags);</span>
+export function createScope(flags) {
+  return new FeatureFlagScope(flags);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >add(</span>...args) {
-<span class="cstat-no" title="statement not covered" >  return FeatureFlags.add(...args);</span>
+export function add(...args) {
+  return FeatureFlags.add(...args);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >enable(</span>...args) {
-<span class="cstat-no" title="statement not covered" >  return FeatureFlags.enable(...args);</span>
+export function enable(...args) {
+  return FeatureFlags.enable(...args);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >disable(</span>...args) {
-<span class="cstat-no" title="statement not covered" >  return FeatureFlags.disable(...args);</span>
+export function disable(...args) {
+  return FeatureFlags.disable(...args);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >enabled(</span>...args) {
-<span class="cstat-no" title="statement not covered" >  return FeatureFlags.enabled(...args);</span>
+export function enabled(...args) {
+  return FeatureFlags.enabled(...args);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >merge(</span>...args) {
-<span class="cstat-no" title="statement not covered" >  return FeatureFlags.merge(...args);</span>
+export function merge(...args) {
+  return FeatureFlags.merge(...args);
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -196,7 +196,7 @@ export function <span class="fstat-no" title="function not covered" >merge(</spa
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -152,18 +152,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">185x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -175,25 +170,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">188x</span>
+<span class="cline-any cline-yes">188x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">188x</span>
+<span class="cline-any cline-yes">188x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -225,13 +225,13 @@ import { TranslateWithId } from '../../types/common';
 &nbsp;
 export type ListBoxMenuIconTranslationKey = 'close.menu' | 'open.menu';
 &nbsp;
-const defaultTranslations: Record&lt;ListBoxMenuIconTranslationKey, string&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+const defaultTranslations: Record&lt;ListBoxMenuIconTranslationKey, string&gt; = {
   'close.menu': 'Close menu',
   'open.menu': 'Open menu',
 };
 &nbsp;
-const defaultTranslateWithId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d: ListBoxMenuIconTranslationKey): string =&gt;</span>
-<span class="cstat-no" title="statement not covered" >  defaultTranslations[id];</span>
+const defaultTranslateWithId = (id: ListBoxMenuIconTranslationKey): string =&gt;
+  defaultTranslations[id];
 &nbsp;
 export interface ListBoxMenuIconProps
   extends TranslateWithId&lt;ListBoxMenuIconTranslationKey&gt; {
@@ -248,16 +248,16 @@ export type ListBoxMenuIconComponent = React.FC&lt;ListBoxMenuIconProps&gt;;
  * `ListBoxMenuIcon` is used to orient the icon up or down depending on the
  * state of the menu for a given `ListBox`
  */
-const ListBoxMenuIcon: ListBoxMenuIconComponent = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span></span>
+const ListBoxMenuIcon: ListBoxMenuIconComponent = ({
   isOpen,
-  translateWithId: t = <span class="branch-0 cbranch-no" title="branch not covered" >defaultTranslateWithId,</span>
+  translateWithId: t = defaultTranslateWithId,
 }: ListBoxMenuIconProps) =&gt; {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const className = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--list-box__menu-icon`, {</span>
+  const prefix = usePrefix();
+  const className = cx(`${prefix}--list-box__menu-icon`, {
     [`${prefix}--list-box__menu-icon--open`]: isOpen,
   });
-  const description = <span class="cstat-no" title="statement not covered" >isOpen ? t('close.menu') : t('open.menu');</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  const description = isOpen ? t('close.menu') : t('open.menu');
+  return (
     &lt;div className={className}&gt;
       &lt;ChevronDown name="chevron--down" aria-label={description}&gt;
         &lt;title&gt;{description}&lt;/title&gt;
@@ -266,7 +266,7 @@ const ListBoxMenuIcon: ListBoxMenuIconComponent = <span class="cstat-no" title="
   );
 };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >ListBoxMenuIcon.propTypes = {</span>
+ListBoxMenuIcon.propTypes = {
   /**
    * Specify whether the menu is currently open, which will influence the
    * direction of the menu icon
@@ -289,7 +289,7 @@ export default ListBoxMenuIcon;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

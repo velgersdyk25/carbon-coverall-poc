@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">69.23% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>9/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -255,21 +255,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -282,21 +280,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -379,19 +379,19 @@ export interface FilenameProps
   tabIndex?: number;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >Filename(</span>{
-  iconDescription = <span class="branch-0 cbranch-no" title="branch not covered" >'Uploading file',</span>
+function Filename({
+  iconDescription = 'Uploading file',
   status = <span class="branch-0 cbranch-no" title="branch not covered" >'uploading',</span>
   invalid,
   name,
-  tabIndex = <span class="branch-0 cbranch-no" title="branch not covered" >0,</span>
+  tabIndex = 0,
   ['aria-describedby']: ariaDescribedBy,
   ...rest
 }: FilenameProps) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-<span class="cstat-no" title="statement not covered" >  switch (status) {</span>
+  const prefix = usePrefix();
+  switch (status) {
     case 'uploading':
-<span class="cstat-no" title="statement not covered" >      return (</span>
+      return (
         &lt;Loading
           description={iconDescription}
           small
@@ -400,22 +400,22 @@ function <span class="fstat-no" title="function not covered" >Filename(</span>{
         /&gt;
       );
     case 'edit':
-<span class="cstat-no" title="statement not covered" >      return (</span>
+      return (
         &lt;&gt;
-          {invalid &amp;&amp; &lt;WarningFilled className={`${prefix}--file-invalid`} /&gt;}
+          {invalid &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;WarningFilled className={`${prefix}--file-invalid`} /&gt;}</span>
           &lt;button
             aria-label={`${iconDescription} - ${name}`}
             className={`${prefix}--file-close`}
             type="button"
             tabIndex={tabIndex}
             {...rest}
-            aria-describedby={invalid ? ariaDescribedBy : undefined}&gt;
+            aria-describedby={invalid ? <span class="branch-0 cbranch-no" title="branch not covered" >ariaDescribedBy </span>: undefined}&gt;
             &lt;Close /&gt;
           &lt;/button&gt;
         &lt;/&gt;
       );
     case 'complete':
-<span class="cstat-no" title="statement not covered" >      return (</span>
+      return (
         &lt;CheckmarkFilled
           aria-label={iconDescription}
           className={`${prefix}--file-complete`}
@@ -424,12 +424,12 @@ function <span class="fstat-no" title="function not covered" >Filename(</span>{
           {iconDescription &amp;&amp; &lt;title&gt;{iconDescription}&lt;/title&gt;}
         &lt;/CheckmarkFilled&gt;
       );
-    default:
+<span class="branch-3 cbranch-no" title="branch not covered" >    default:</span>
 <span class="cstat-no" title="statement not covered" >      return null;</span>
   }
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >Filename.propTypes = {</span>
+Filename.propTypes = {
   /**
    * Specify an id that describes the error to be read by screen readers when the filename is invalid
    */
@@ -469,7 +469,7 @@ export default Filename;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T16:14:50.749Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
