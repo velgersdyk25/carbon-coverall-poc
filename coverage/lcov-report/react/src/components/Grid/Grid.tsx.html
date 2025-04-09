@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -142,16 +142,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-yes">33x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">42x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -188,7 +186,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">42x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
@@ -205,15 +205,15 @@ import { CSSGrid } from './CSSGrid';
 import { FlexGrid } from './FlexGrid';
 import { GridComponent, GridProps } from './GridTypes';
 &nbsp;
-function <span class="fstat-no" title="function not covered" >Grid&lt;</span>T extends React.ElementType&gt;(props: GridProps&lt;T&gt;) {
-  const enableCSSGrid = <span class="cstat-no" title="statement not covered" >useFeatureFlag('enable-css-grid');</span>
-<span class="cstat-no" title="statement not covered" >  if (enableCSSGrid) {</span>
-<span class="cstat-no" title="statement not covered" >    return &lt;CSSGrid {...props} /&gt;;</span>
+function Grid&lt;T extends React.ElementType&gt;(props: GridProps&lt;T&gt;) {
+  const enableCSSGrid = useFeatureFlag('enable-css-grid');
+  if (enableCSSGrid) {
+    return &lt;CSSGrid {...props} /&gt;;
   }
-<span class="cstat-no" title="statement not covered" >  return &lt;FlexGrid {...props} /&gt;;</span>
+  return &lt;FlexGrid {...props} /&gt;;
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >Grid.propTypes = {</span>
+Grid.propTypes = {
   /**
    * Specify grid alignment. Default is center
    */
@@ -252,7 +252,7 @@ function <span class="fstat-no" title="function not covered" >Grid&lt;</span>T e
   narrow: PropTypes.bool,
 };
 &nbsp;
-const GridAsGridComponent = <span class="cstat-no" title="statement not covered" >Grid as GridComponent;</span>
+const GridAsGridComponent = Grid as GridComponent;
 &nbsp;
 export { GridAsGridComponent as Grid };
 &nbsp;</pre></td></tr></table></pre>
@@ -262,7 +262,7 @@ export { GridAsGridComponent as Grid };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

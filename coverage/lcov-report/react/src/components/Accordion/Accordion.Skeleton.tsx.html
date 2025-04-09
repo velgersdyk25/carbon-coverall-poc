@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">91.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>11/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -250,18 +250,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -274,17 +270,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">31x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -308,8 +304,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-yes">31x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -370,23 +370,23 @@ export interface AccordionSkeletonProps {
   ordered?: boolean;
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >AccordionSkeleton(</span>{
-  align = <span class="branch-0 cbranch-no" title="branch not covered" >'end',</span>
+function AccordionSkeleton({
+  align = 'end',
   className,
-  count = <span class="branch-0 cbranch-no" title="branch not covered" >4,</span>
+  count = 4,
   isFlush,
-  open = <span class="branch-0 cbranch-no" title="branch not covered" >true,</span>
-  ordered = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
+  open = true,
+  ordered = false,
   ...rest
 }: AccordionSkeletonProps) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const classes = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--accordion`, `${prefix}--skeleton`, className, {</span>
+  const prefix = usePrefix();
+  const classes = cx(`${prefix}--accordion`, `${prefix}--skeleton`, className, {
     [`${prefix}--accordion--${align}`]: align,
     [`${prefix}--accordion--flush`]: isFlush &amp;&amp; align !== 'start',
   });
-  const numSkeletonItems = <span class="cstat-no" title="statement not covered" >open ? count - 1 : count;</span>
-  const ListTag = <span class="cstat-no" title="statement not covered" >ordered ? 'ol' : 'ul';</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  const numSkeletonItems = open ? count - 1 : <span class="branch-1 cbranch-no" title="branch not covered" >count;</span>
+  const ListTag = ordered ? 'ol' : 'ul';
+  return (
     &lt;ListTag className={classes} {...rest}&gt;
       {open &amp;&amp; (
         &lt;li
@@ -402,14 +402,14 @@ function <span class="fstat-no" title="function not covered" >AccordionSkeleton(
           &lt;/div&gt;
         &lt;/li&gt;
       )}
-      {Array.from({ length: numSkeletonItems }).map(<span class="fstat-no" title="function not covered" >(_</span>, i) =&gt; (
-<span class="cstat-no" title="statement not covered" >        &lt;AccordionSkeletonItem key={i} /&gt;</span>
+      {Array.from({ length: numSkeletonItems }).map((_, i) =&gt; (
+        &lt;AccordionSkeletonItem key={i} /&gt;
       ))}
     &lt;/ListTag&gt;
   );
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >AccordionSkeleton.propTypes = {</span>
+AccordionSkeleton.propTypes = {
   /**
    * Specify the alignment of the accordion heading title and chevron.
    */
@@ -436,9 +436,9 @@ function <span class="fstat-no" title="function not covered" >AccordionSkeleton(
   open: PropTypes.bool,
 };
 &nbsp;
-function <span class="fstat-no" title="function not covered" >AccordionSkeletonItem(</span>) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+function AccordionSkeletonItem() {
+  const prefix = usePrefix();
+  return (
     &lt;li className={`${prefix}--accordion__item`}&gt;
       &lt;span className={`${prefix}--accordion__heading`}&gt;
         &lt;ChevronRight className={`${prefix}--accordion__arrow`} /&gt;
@@ -457,7 +457,7 @@ export { AccordionSkeleton };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

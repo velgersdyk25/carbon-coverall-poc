@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -127,23 +127,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -168,25 +168,25 @@ import { Simulate } from 'react-dom/test-utils';
  * @param {HTMLInputElement} input
  * @param {Array&lt;File&gt;} [files]
  */
-export function <span class="fstat-no" title="function not covered" >uploadFiles(</span>input, files = <span class="branch-0 cbranch-no" title="branch not covered" >[])</span> {
+export function uploadFiles(input, files = <span class="branch-0 cbranch-no" title="branch not covered" >[])</span> {
   // Define the 'files' property on the input with the given files
-<span class="cstat-no" title="statement not covered" >  Object.defineProperty(input, 'files', {</span>
+  Object.defineProperty(input, 'files', {
     writable: true,
     value: files,
   });
 &nbsp;
   // When we update the value of the empty, if it is falsy we clear the input
   // files to mirror browser behavior
-<span class="cstat-no" title="statement not covered" >  Object.defineProperty(input, 'value', {</span>
-<span class="fstat-no" title="function not covered" >    se</span>t(newValue) {
-<span class="cstat-no" title="statement not covered" >      if (!newValue) {</span>
-<span class="cstat-no" title="statement not covered" >        input.files.length = 0;</span>
+  Object.defineProperty(input, 'value', {
+    set(newValue) {
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (!newValue) {
+        input.files.length = 0;
       }
     },
   });
 &nbsp;
   // Simulate the change event with the given options
-<span class="cstat-no" title="statement not covered" >  Simulate.change(input, {</span>
+  Simulate.change(input, {
     target: {
       files,
     },
@@ -199,7 +199,7 @@ export function <span class="fstat-no" title="function not covered" >uploadFiles
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

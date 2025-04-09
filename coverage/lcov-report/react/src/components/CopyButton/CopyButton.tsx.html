@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -320,8 +320,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -331,7 +331,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -383,8 +383,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -401,7 +401,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -531,8 +531,8 @@ export type CopyButtonAlignment =
   | DeprecatedCopyButtonAlignment
   | NewCopyButtonAlignment;
 &nbsp;
-const propMappingFunction = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>eprecatedValue) =&gt; {</span>
-  const mapping = <span class="cstat-no" title="statement not covered" >{</span>
+const propMappingFunction = (deprecatedValue) =&gt; {
+  const mapping = {
     'top-left': 'top-start',
     'top-right': 'top-end',
     'bottom-left': 'bottom-start',
@@ -542,7 +542,7 @@ const propMappingFunction = <span class="cstat-no" title="statement not covered"
     'right-bottom': 'right-end',
     'right-top': 'right-start',
   };
-<span class="cstat-no" title="statement not covered" >  return mapping[deprecatedValue];</span>
+  return mapping[deprecatedValue];
 };
 &nbsp;
 export interface CopyButtonProps extends ButtonProps&lt;'button'&gt; {
@@ -584,18 +584,18 @@ export interface CopyButtonProps extends ButtonProps&lt;'button'&gt; {
    */
   onClick?: MouseEventHandler&lt;HTMLButtonElement&gt;;
 }
-export default function <span class="fstat-no" title="function not covered" >CopyButton(</span>{
-  align = <span class="branch-0 cbranch-no" title="branch not covered" >'bottom',</span>
-  autoAlign = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
-  feedback = <span class="branch-0 cbranch-no" title="branch not covered" >'Copied!',</span>
-  feedbackTimeout = <span class="branch-0 cbranch-no" title="branch not covered" >2000,</span>
-  iconDescription = <span class="branch-0 cbranch-no" title="branch not covered" >'Copy to clipboard',</span>
+export default function CopyButton({
+  align = 'bottom',
+  autoAlign = false,
+  feedback = 'Copied!',
+  feedbackTimeout = 2000,
+  iconDescription = 'Copy to clipboard',
   className,
-  onClick = <span class="branch-0 cbranch-no" title="branch not covered" >noopFn,</span>
+  onClick = noopFn,
   ...other
 }: CopyButtonProps) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  const prefix = usePrefix();
+  return (
     &lt;LayoutConstraint size={{ default: 'md', max: 'lg' }}&gt;
       &lt;Copy
         feedback={feedback}
@@ -612,7 +612,7 @@ export default function <span class="fstat-no" title="function not covered" >Cop
   );
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >CopyButton.propTypes = {</span>
+CopyButton.propTypes = {
   /**
    * Specify how the trigger should align with the tooltip
    */
@@ -703,7 +703,7 @@ export default function <span class="fstat-no" title="function not covered" >Cop
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

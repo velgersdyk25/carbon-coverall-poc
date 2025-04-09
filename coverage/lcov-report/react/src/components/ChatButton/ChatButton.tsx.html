@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -277,7 +277,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -292,32 +292,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -325,7 +318,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -433,8 +433,8 @@ export interface ChatButtonProps
   size?: ChatButtonSize;
 }
 &nbsp;
-const ChatButton = <span class="cstat-no" title="statement not covered" >React.forwardRef&lt;HTMLButtonElement, ChatButtonProps&gt;(</span>
-  function <span class="fstat-no" title="function not covered" >ChatButton(</span>
+const ChatButton = React.forwardRef&lt;HTMLButtonElement, ChatButtonProps&gt;(
+  function ChatButton(
     {
       className,
       children,
@@ -448,25 +448,25 @@ const ChatButton = <span class="cstat-no" title="statement not covered" >React.f
     }: ChatButtonProps,
     ref
   ) {
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-    const classNames = <span class="cstat-no" title="statement not covered" >classnames(className, {</span>
+    const prefix = usePrefix();
+    const classNames = classnames(className, {
       [`${prefix}--chat-btn`]: true,
       [`${prefix}--chat-btn--with-icon`]: renderIcon,
       [`${prefix}--chat-btn--quick-action`]: isQuickAction,
       [`${prefix}--chat-btn--quick-action--selected`]: isSelected,
     });
 &nbsp;
-    const allowedSizes: ChatButtonSize[] = <span class="cstat-no" title="statement not covered" >['sm', 'md', 'lg'];</span>
+    const allowedSizes: ChatButtonSize[] = ['sm', 'md', 'lg'];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (isQuickAction) {</span>
-<span class="cstat-no" title="statement not covered" >      kind = 'ghost';</span>
-<span class="cstat-no" title="statement not covered" >      size = 'sm';</span>
+    if (isQuickAction) {
+      kind = 'ghost';
+      size = 'sm';
     } else {
       // Do not allow size larger than `lg`
-<span class="cstat-no" title="statement not covered" >      size = allowedSizes.includes(size as ChatButtonSize) ? size : 'lg';</span>
+      size = allowedSizes.includes(size as ChatButtonSize) ? size : 'lg';
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
       &lt;Button
         disabled={disabled}
         className={classNames}
@@ -481,7 +481,7 @@ const ChatButton = <span class="cstat-no" title="statement not covered" >React.f
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >ChatButton.propTypes = {</span>
+ChatButton.propTypes = {
   /**
    * Provide the contents of your Select
    */
@@ -538,7 +538,7 @@ export default ChatButton;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

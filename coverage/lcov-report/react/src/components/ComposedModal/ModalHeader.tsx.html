@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -349,7 +349,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -367,36 +367,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -421,7 +418,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -557,8 +557,8 @@ export interface ModalHeaderProps extends DivProps {
   titleClassName?: string;
 }
 &nbsp;
-export const ModalHeader = <span class="cstat-no" title="statement not covered" >React.forwardRef&lt;HTMLDivElement, ModalHeaderProps&gt;(</span>
-  function <span class="fstat-no" title="function not covered" >ModalHeader(</span>
+export const ModalHeader = React.forwardRef&lt;HTMLDivElement, ModalHeaderProps&gt;(
+  function ModalHeader(
     {
       buttonOnClick,
       children,
@@ -566,7 +566,7 @@ export const ModalHeader = <span class="cstat-no" title="statement not covered" 
       closeClassName,
       closeIconClassName,
       closeModal,
-      iconDescription = <span class="branch-0 cbranch-no" title="branch not covered" >'Close',</span>
+      iconDescription = 'Close',
       label,
       labelClassName,
       title,
@@ -575,33 +575,33 @@ export const ModalHeader = <span class="cstat-no" title="statement not covered" 
     },
     ref
   ) {
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
+    const prefix = usePrefix();
 &nbsp;
-    function <span class="fstat-no" title="function not covered" >handleCloseButtonClick(</span>evt: MouseEvent) {
-<span class="cstat-no" title="statement not covered" >      closeModal?.(evt);</span>
-<span class="cstat-no" title="statement not covered" >      buttonOnClick?.(evt);</span>
+    function handleCloseButtonClick(evt: MouseEvent) {
+      closeModal?.(evt);
+      buttonOnClick?.(evt);
     }
 &nbsp;
-    const headerClass = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--modal-header`, customClassName);</span>
+    const headerClass = cx(`${prefix}--modal-header`, customClassName);
 &nbsp;
-    const labelClass = <span class="cstat-no" title="statement not covered" >cx(</span>
+    const labelClass = cx(
       `${prefix}--modal-header__label ${prefix}--type-delta`,
       labelClassName
     );
 &nbsp;
-    const titleClass = <span class="cstat-no" title="statement not covered" >cx(</span>
+    const titleClass = cx(
       `${prefix}--modal-header__heading ${prefix}--type-beta`,
       titleClassName
     );
 &nbsp;
-    const closeClass = <span class="cstat-no" title="statement not covered" >cx(`${prefix}--modal-close`, closeClassName);</span>
+    const closeClass = cx(`${prefix}--modal-close`, closeClassName);
 &nbsp;
-    const closeIconClass = <span class="cstat-no" title="statement not covered" >cx(</span>
+    const closeIconClass = cx(
       `${prefix}--modal-close__icon`,
       closeIconClassName
     );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
       &lt;div className={headerClass} {...rest} ref={ref}&gt;
         {label &amp;&amp; &lt;h2 className={labelClass}&gt;{label}&lt;/h2&gt;}
 &nbsp;
@@ -629,7 +629,7 @@ export const ModalHeader = <span class="cstat-no" title="statement not covered" 
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >ModalHeader.propTypes = {</span>
+ModalHeader.propTypes = {
   /**
    * Provide an optional function to be called when the close button is
    * clicked
@@ -694,7 +694,7 @@ export const ModalHeader = <span class="cstat-no" title="statement not covered" 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

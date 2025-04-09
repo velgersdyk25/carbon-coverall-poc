@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>10/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">37.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>3/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>10/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -129,33 +129,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">19x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,17 +177,17 @@ import rangePlugin from 'flatpickr/dist/plugins/rangePlugin';
  *     Workaround for: https://github.com/flatpickr/flatpickr/issues/1944
  *   * A logic to ensure `fp.setDate()` call won't end up with "startDate to endDate" set to the first `&lt;input&gt;`
  */
-export default <span class="fstat-no" title="function not covered" >(c</span>onfig) =&gt; {
-  const factory = <span class="cstat-no" title="statement not covered" >rangePlugin(Object.assign({ position: 'left' }, config));</span>
-<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >(f</span>p) =&gt; {</span>
-    const origSetDate = <span class="cstat-no" title="statement not covered" >fp.setDate;</span>
+export default (config) =&gt; {
+  const factory = rangePlugin(Object.assign({ position: 'left' }, config));
+  return (fp) =&gt; {
+    const origSetDate = fp.setDate;
 &nbsp;
-    const init = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      fp.setDate = function <span class="fstat-no" title="function not covered" >setDate(</span>dates, triggerChange, format) {</span>
-<span class="cstat-no" title="statement not covered" >        origSetDate.call(this, dates, triggerChange, format);</span>
+    const init = () =&gt; {
+      fp.setDate = function setDate(dates, triggerChange, format) {
+        origSetDate.call(this, dates, triggerChange, format);
         // If `triggerChange` is `true`, `onValueUpdate` Flatpickr event is fired
         // where Flatpickr's range plugin takes care of fixing the first `&lt;input&gt;`
-<span class="cstat-no" title="statement not covered" >        if (!triggerChange &amp;&amp; dates.length === 2) {</span>
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!triggerChange &amp;&amp; dates.length === 2) {
           const { _input: inputFrom } = <span class="cstat-no" title="statement not covered" >fp;</span>
           const { input: inputTo } = <span class="cstat-no" title="statement not covered" >config;</span>
 <span class="cstat-no" title="statement not covered" >          [inputFrom, inputTo].forEach(<span class="fstat-no" title="function not covered" >(i</span>nput, i) =&gt; {</span>
@@ -201,12 +201,12 @@ export default <span class="fstat-no" title="function not covered" >(c</span>onf
       };
     };
 &nbsp;
-    const origRangePlugin = <span class="cstat-no" title="statement not covered" >factory(fp);</span>
-    const { onReady: origOnReady } = <span class="cstat-no" title="statement not covered" >origRangePlugin;</span>
+    const origRangePlugin = factory(fp);
+    const { onReady: origOnReady } = origRangePlugin;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return Object.assign(origRangePlugin, {</span>
+    return Object.assign(origRangePlugin, {
       onReady: [init, origOnReady],
-<span class="fstat-no" title="function not covered" >      on</span>PreCalendarPosition() {},
+      onPreCalendarPosition() {},
     });
   };
 };
@@ -217,7 +217,7 @@ export default <span class="fstat-no" title="function not covered" >(c</span>onf
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../../prettify.js"></script>
         <script>

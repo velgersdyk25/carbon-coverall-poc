@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -198,8 +198,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -209,12 +209,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -225,7 +223,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -283,7 +283,7 @@ export interface HeaderMenuButtonProps extends HeaderMenuButtonBaseProps {
   isCollapsible?: boolean;
 }
 &nbsp;
-export default function <span class="fstat-no" title="function not covered" >HeaderMenuButton(</span>{
+export default function HeaderMenuButton({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className: customClassName,
@@ -293,8 +293,8 @@ export default function <span class="fstat-no" title="function not covered" >Hea
   isCollapsible,
   ...rest
 }: HeaderMenuButtonProps) {
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const className = <span class="cstat-no" title="statement not covered" >cx({</span>
+  const prefix = usePrefix();
+  const className = cx({
     ...(typeof customClassName === 'string' &amp;&amp; {
       [customClassName]: !!customClassName,
     }),
@@ -304,10 +304,10 @@ export default function <span class="fstat-no" title="function not covered" >Hea
     [`${prefix}--header__menu-toggle`]: true,
     [`${prefix}--header__menu-toggle__hidden`]: !isCollapsible,
   });
-  const menuIcon = <span class="cstat-no" title="statement not covered" >renderMenuIcon ? renderMenuIcon : &lt;Menu size={20} /&gt;;</span>
-  const closeIcon = <span class="cstat-no" title="statement not covered" >renderCloseIcon ? renderCloseIcon : &lt;Close size={20} /&gt;;</span>
+  const menuIcon = renderMenuIcon ? renderMenuIcon : &lt;Menu size={20} /&gt;;
+  const closeIcon = renderCloseIcon ? renderCloseIcon : &lt;Close size={20} /&gt;;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;button
       {...rest}
       aria-label={ariaLabel}
@@ -320,7 +320,7 @@ export default function <span class="fstat-no" title="function not covered" >Hea
   );
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >HeaderMenuButton.propTypes = {</span>
+HeaderMenuButton.propTypes = {
   /**
    * Required props for accessibility label on the underlying menu button
    */
@@ -355,7 +355,7 @@ export default function <span class="fstat-no" title="function not covered" >Hea
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

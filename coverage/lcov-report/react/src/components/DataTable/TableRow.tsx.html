@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">58.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>7/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -170,25 +170,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
+<span class="cline-any cline-yes">341x</span>
+<span class="cline-any cline-yes">851x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -199,6 +192,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -206,17 +200,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">343x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -253,14 +253,14 @@ export interface TableRowProps extends ReactAttr&lt;HTMLTableRowElement&gt; {
   isSelected?: boolean;
 }
 &nbsp;
-const TableRow = <span class="cstat-no" title="statement not covered" >React.forwardRef&lt;HTMLTableCellElement, TableRowProps&gt;(</span>
-<span class="fstat-no" title="function not covered" >  (p</span>rops, ref) =&gt; {
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
+const TableRow = React.forwardRef&lt;HTMLTableCellElement, TableRowProps&gt;(
+  (props, ref) =&gt; {
+    const prefix = usePrefix();
 &nbsp;
     let rowHasAILabel;
-<span class="cstat-no" title="statement not covered" >    if (props?.children) {</span>
-<span class="cstat-no" title="statement not covered" >      React.Children.toArray(props.children).map(<span class="fstat-no" title="function not covered" >(c</span>hild: any) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        if (</span>
+    if (props?.children) {
+      React.Children.toArray(props.children).map((child: any) =&gt; {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (
           child.type?.displayName === 'TableSlugRow' ||
           child.type?.displayName === 'TableDecoratorRow'
         ) {
@@ -275,7 +275,7 @@ const TableRow = <span class="cstat-no" title="statement not covered" >React.for
     }
     // Remove unnecessary props if provided to this component, these are
     // only useful in `TableExpandRow`
-    const className = <span class="cstat-no" title="statement not covered" >cx(props.className, {</span>
+    const className = cx(props.className, {
       [`${prefix}--data-table--selected`]: props.isSelected,
       [`${prefix}--data-table--slug-row ${prefix}--data-table--ai-label-row`]:
         rowHasAILabel,
@@ -289,17 +289,17 @@ const TableRow = <span class="cstat-no" title="statement not covered" >React.for
       isExpanded,
       isSelected,
       ...cleanProps
-    } = <span class="cstat-no" title="statement not covered" >props as any;</span>
+    } = props as any;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (className) {</span>
-<span class="cstat-no" title="statement not covered" >      cleanProps.className = className;</span>
+    if (className) {
+      cleanProps.className = className;
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return &lt;tr ref={ref} {...cleanProps} /&gt;;</span>
+    return &lt;tr ref={ref} {...cleanProps} /&gt;;
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >TableRow.propTypes = {</span>
+TableRow.propTypes = {
   /**
    * Specify an optional className to be applied to the container node
    */
@@ -319,7 +319,7 @@ export default TableRow;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

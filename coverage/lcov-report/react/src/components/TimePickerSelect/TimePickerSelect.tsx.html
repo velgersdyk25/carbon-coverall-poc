@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -227,7 +227,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -239,17 +239,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -267,7 +265,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -343,10 +343,10 @@ type TimePickerSelectComponent = ForwardRefReturn&lt;
   TimePickerSelectProps
 &gt;;
 &nbsp;
-const TimePickerSelect: TimePickerSelectComponent = <span class="cstat-no" title="statement not covered" >React.forwardRef(</span>
-  function <span class="fstat-no" title="function not covered" >TimePickerSelect(</span>
+const TimePickerSelect: TimePickerSelectComponent = React.forwardRef(
+  function TimePickerSelect(
     {
-      ['aria-label']: ariaLabel = <span class="branch-0 cbranch-no" title="branch not covered" >'open list of options',</span>
+      ['aria-label']: ariaLabel = 'open list of options',
       children,
       id,
       disabled = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
@@ -355,15 +355,15 @@ const TimePickerSelect: TimePickerSelectComponent = <span class="cstat-no" title
     },
     ref
   ) {
-    const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
+    const prefix = usePrefix();
 &nbsp;
-    const selectClasses = <span class="cstat-no" title="statement not covered" >cx({</span>
+    const selectClasses = cx({
       [`${prefix}--select`]: true,
       [`${prefix}--time-picker__select`]: true,
-      ...(className &amp;&amp; { [className]: true }),
+      ...(className &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >{ [className]: true })</span>,
     });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
       &lt;div className={selectClasses}&gt;
         &lt;select
           aria-label={ariaLabel}
@@ -383,7 +383,7 @@ const TimePickerSelect: TimePickerSelectComponent = <span class="cstat-no" title
   }
 );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >TimePickerSelect.propTypes = {</span>
+TimePickerSelect.propTypes = {
   /**
    * Provide the contents of your TimePickerSelect
    */
@@ -418,7 +418,7 @@ export default TimePickerSelect;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

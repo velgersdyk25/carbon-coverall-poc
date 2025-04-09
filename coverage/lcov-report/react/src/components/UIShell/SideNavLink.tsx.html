@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>8/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">77.77% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>7/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -317,7 +317,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -332,16 +332,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -365,8 +365,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -408,7 +408,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -492,7 +492,7 @@ export interface SideNavLinkComponent {
   propTypes?: WeakValidationMap&lt;SideNavLinkProps&lt;any&gt;&gt;;
 }
 &nbsp;
-const SideNavLink: SideNavLinkComponent = <span class="cstat-no" title="statement not covered" >forwardRef(function <span class="fstat-no" title="function not covered" >SideNavLink&lt;</span></span>
+const SideNavLink: SideNavLinkComponent = forwardRef(function SideNavLink&lt;
   E extends ElementType = 'a',
 &gt;(
   {
@@ -501,22 +501,22 @@ const SideNavLink: SideNavLinkComponent = <span class="cstat-no" title="statemen
     renderIcon: IconElement,
     isActive,
     isSideNavExpanded,
-    large = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
+    large = false,
     tabIndex,
     ...rest
   }: SideNavLinkProps&lt;E&gt;,
   ref: ForwardedRef&lt;ElementType&gt;
 ) {
-  const isRail = <span class="cstat-no" title="statement not covered" >useContext(SideNavContext);</span>
+  const isRail = useContext(SideNavContext);
 &nbsp;
-  const prefix = <span class="cstat-no" title="statement not covered" >usePrefix();</span>
-  const className = <span class="cstat-no" title="statement not covered" >cx({</span>
+  const prefix = usePrefix();
+  const className = cx({
     [`${prefix}--side-nav__link`]: true,
     [`${prefix}--side-nav__link--current`]: isActive,
     [customClassName as string]: !!customClassName,
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;SideNavItem large={large}&gt;
       &lt;Link
         {...(rest as LinkProps&lt;E&gt;)}
@@ -525,9 +525,9 @@ const SideNavLink: SideNavLinkComponent = <span class="cstat-no" title="statemen
         tabIndex={
           tabIndex === undefined
             ? !isSideNavExpanded &amp;&amp; !isRail
-              ? -1
+              ? <span class="branch-0 cbranch-no" title="branch not covered" >-1</span>
               : 0
-            : tabIndex
+            : <span class="branch-1 cbranch-no" title="branch not covered" >tabIndex</span>
         }&gt;
         {IconElement &amp;&amp; (
           &lt;SideNavIcon small&gt;
@@ -540,8 +540,8 @@ const SideNavLink: SideNavLinkComponent = <span class="cstat-no" title="statemen
   );
 }) as SideNavLinkComponent;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >SideNavLink.displayName = 'SideNavLink';</span>
-<span class="cstat-no" title="statement not covered" >SideNavLink.propTypes = {</span>
+SideNavLink.displayName = 'SideNavLink';
+SideNavLink.propTypes = {
   ...LinkPropTypes,
 &nbsp;
   /**
@@ -583,7 +583,7 @@ const SideNavLink: SideNavLinkComponent = <span class="cstat-no" title="statemen
 };
 &nbsp;
 // eslint-disable-next-line react/display-name
-export const createCustomSideNavLink = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>lement) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; {</span></span>
+export const createCustomSideNavLink = <span class="fstat-no" title="function not covered" >(e</span>lement) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  return &lt;SideNavLink element={element} {...props} /&gt;;</span>
 };
 &nbsp;
@@ -595,7 +595,7 @@ export default SideNavLink;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T19:40:07.016Z
+                at 2025-04-09T19:52:26.839Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
