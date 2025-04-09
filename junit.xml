@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="10" errors="0" time="6.012">
+  <testsuite name="@carbon/pictograms" errors="0" failures="2" skipped="0" timestamp="2025-04-09T16:08:44" time="2.998" tests="2">
+    <testcase classname="@carbon/pictograms should export each SVG asset" name="@carbon/pictograms should export each SVG asset" time="0.006">
+      <failure>Error: Cannot find module &apos;@carbon/pictograms&apos; from &apos;e2e/pictograms/components-test.js&apos;
+    at Resolver._throwModNotFoundError (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:491:11)
+    at Resolver.resolveModule (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:413:10)
+    at Resolver._getVirtualMockPath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:733:14)
+    at Resolver._getAbsolutePath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:690:14)
+    at Resolver.getModuleID (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:617:31)
+    at Runtime._shouldMockCjs (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1962:37)
+    at Runtime.requireModuleOrMock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1241:14)
+    at Object.require (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/pictograms/components-test.js:49:38)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)
+    at jestAdapter (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:411:16)
+    at runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:499:34)
+    at Object.worker (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="@carbon/pictograms should export each SVG asset as a direct path" name="@carbon/pictograms should export each SVG asset as a direct path" time="0.008">
+      <failure>Error: expect(received).not.toThrow()
+
+Error name:    &quot;Error&quot;
+Error message: &quot;Cannot find module &apos;/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/pictograms/lib/accelerated-computing/index.js&apos; from &apos;e2e/pictograms/components-test.js&apos;&quot;
+
+      70 |
+      71 |         expect(() =&gt; {
+    &gt; 72 |           require(commonjs);
+         |           ^
+      73 |         }).not.toThrow();
+      74 |         await expect(import(esm)).resolves.toBeDefined();
+      75 |       }
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:491:11)
+      at require (e2e/pictograms/components-test.js:72:11)
+      at Object.&lt;anonymous&gt; (node_modules/expect/build/toThrowMatchers.js:83:11)
+      at Object.throwingMatcher [as toThrow] (node_modules/expect/build/index.js:342:21)
+      at Object.toThrow (e2e/pictograms/components-test.js:73:16)
+    at Object.toThrow (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/pictograms/components-test.js:73:16)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="@carbon/pictograms-react" errors="0" failures="2" skipped="0" timestamp="2025-04-09T16:08:44" time="3.088" tests="2">
+    <testcase classname="@carbon/pictograms-react should export each SVG asset" name="@carbon/pictograms-react should export each SVG asset" time="0.003">
+      <failure>Error: Cannot find module &apos;@carbon/pictograms-react&apos; from &apos;e2e/pictograms-react/components-test.js&apos;
+    at Resolver._throwModNotFoundError (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:491:11)
+    at Resolver.resolveModule (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:413:10)
+    at Resolver._getVirtualMockPath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:733:14)
+    at Resolver._getAbsolutePath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:690:14)
+    at Resolver.getModuleID (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:617:31)
+    at Runtime._shouldMockCjs (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1962:37)
+    at Runtime.requireModuleOrMock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1241:14)
+    at Object.require (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/pictograms-react/components-test.js:50:43)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)
+    at jestAdapter (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:411:16)
+    at runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:499:34)
+    at Object.worker (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="@carbon/pictograms-react should export each SVG asset as a direct path" name="@carbon/pictograms-react should export each SVG asset as a direct path" time="0.008">
+      <failure>Error: expect(received).not.toThrow()
+
+Error name:    &quot;Error&quot;
+Error message: &quot;Cannot find module &apos;/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/pictograms-react/lib/accelerated-computing/index.js&apos; from &apos;e2e/pictograms-react/components-test.js&apos;&quot;
+
+      67 |
+      68 |         expect(() =&gt; {
+    &gt; 69 |           require(commonjs);
+         |           ^
+      70 |         }).not.toThrow();
+      71 |         await expect(import(esm)).resolves.toBeDefined();
+      72 |       }
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:491:11)
+      at require (e2e/pictograms-react/components-test.js:69:11)
+      at Object.&lt;anonymous&gt; (node_modules/expect/build/toThrowMatchers.js:83:11)
+      at Object.throwingMatcher [as toThrow] (node_modules/expect/build/index.js:342:21)
+      at Object.toThrow (e2e/pictograms-react/components-test.js:70:16)
+    at Object.toThrow (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/pictograms-react/components-test.js:70:16)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="@carbon/icons-vue" errors="0" failures="2" skipped="0" timestamp="2025-04-09T16:08:44" time="4.467" tests="2">
+    <testcase classname="@carbon/icons-vue should export each SVG asset" name="@carbon/icons-vue should export each SVG asset" time="0.003">
+      <failure>Error: Cannot find module &apos;@carbon/icons-vue&apos; from &apos;e2e/icons-vue/components-test.js&apos;
+    at Resolver._throwModNotFoundError (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:491:11)
+    at Resolver.resolveModule (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:413:10)
+    at Resolver._getVirtualMockPath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:733:14)
+    at Resolver._getAbsolutePath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:690:14)
+    at Resolver.getModuleID (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:617:31)
+    at Runtime._shouldMockCjs (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1962:37)
+    at Runtime.requireModuleOrMock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1241:14)
+    at Object.require (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons-vue/components-test.js:47:36)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)
+    at jestAdapter (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:411:16)
+    at runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:499:34)
+    at Object.worker (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="@carbon/icons-vue should export each SVG asset as a direct path" name="@carbon/icons-vue should export each SVG asset as a direct path" time="0.008">
+      <failure>Error: expect(received).not.toThrow()
+
+Error name:    &quot;Error&quot;
+Error message: &quot;Cannot find module &apos;/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/icons-vue/lib/watson-health/3D-Cursor/32.js&apos; from &apos;e2e/icons-vue/components-test.js&apos;&quot;
+
+      64 |
+      65 |         expect(() =&gt; {
+    &gt; 66 |           require(commonjs);
+         |           ^
+      67 |         }).not.toThrow();
+      68 |         await expect(import(esm)).resolves.toBeDefined();
+      69 |       }
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:491:11)
+      at require (e2e/icons-vue/components-test.js:66:11)
+      at Object.&lt;anonymous&gt; (node_modules/expect/build/toThrowMatchers.js:83:11)
+      at Object.throwingMatcher [as toThrow] (node_modules/expect/build/index.js:342:21)
+      at Object.toThrow (e2e/icons-vue/components-test.js:67:16)
+    at Object.toThrow (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons-vue/components-test.js:67:16)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="@carbon/icons" errors="0" failures="2" skipped="0" timestamp="2025-04-09T16:08:44" time="4.45" tests="2">
+    <testcase classname="@carbon/icons should export each SVG asset" name="@carbon/icons should export each SVG asset" time="0.003">
+      <failure>Error: Cannot find module &apos;@carbon/icons&apos; from &apos;e2e/icons/components-test.js&apos;
+    at Resolver._throwModNotFoundError (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:491:11)
+    at Resolver.resolveModule (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:413:10)
+    at Resolver._getVirtualMockPath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:733:14)
+    at Resolver._getAbsolutePath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:690:14)
+    at Resolver.getModuleID (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:617:31)
+    at Runtime._shouldMockCjs (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1962:37)
+    at Runtime.requireModuleOrMock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1241:14)
+    at Object.require (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons/components-test.js:46:33)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)
+    at jestAdapter (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:411:16)
+    at runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:499:34)
+    at Object.worker (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="@carbon/icons should export each SVG asset as a direct path" name="@carbon/icons should export each SVG asset as a direct path" time="0.008">
+      <failure>Error: expect(received).not.toThrow()
+
+Error name:    &quot;Error&quot;
+Error message: &quot;Cannot find module &apos;/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/icons/lib/watson-health/3D-Cursor/32.js&apos; from &apos;e2e/icons/components-test.js&apos;&quot;
+
+      63 |
+      64 |         expect(() =&gt; {
+    &gt; 65 |           require(commonjs);
+         |           ^
+      66 |         }).not.toThrow();
+      67 |         await expect(import(esm)).resolves.toBeDefined();
+      68 |       }
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:491:11)
+      at require (e2e/icons/components-test.js:65:11)
+      at Object.&lt;anonymous&gt; (node_modules/expect/build/toThrowMatchers.js:83:11)
+      at Object.throwingMatcher [as toThrow] (node_modules/expect/build/index.js:342:21)
+      at Object.toThrow (e2e/icons/components-test.js:66:16)
+    at Object.toThrow (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons/components-test.js:66:16)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="@carbon/icons-react" errors="0" failures="2" skipped="0" timestamp="2025-04-09T16:08:44" time="5.565" tests="2">
+    <testcase classname="@carbon/icons-react should export each SVG asset" name="@carbon/icons-react should export each SVG asset" time="0.002">
+      <failure>Error: Cannot find module &apos;@carbon/icons-react&apos; from &apos;e2e/icons-react/components-test.js&apos;
+    at Resolver._throwModNotFoundError (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:491:11)
+    at Resolver.resolveModule (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:413:10)
+    at Resolver._getVirtualMockPath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:733:14)
+    at Resolver._getAbsolutePath (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:690:14)
+    at Resolver.getModuleID (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-resolve/build/resolver.js:617:31)
+    at Runtime._shouldMockCjs (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1962:37)
+    at Runtime.requireModuleOrMock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runtime/build/index.js:1241:14)
+    at Object.require (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons-react/components-test.js:48:38)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)
+    at jestAdapter (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:411:16)
+    at runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/runTest.js:499:34)
+    at Object.worker (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="@carbon/icons-react should export each SVG asset as a direct path" name="@carbon/icons-react should export each SVG asset as a direct path" time="0.008">
+      <failure>Error: expect(received).not.toThrow()
+
+Error name:    &quot;Error&quot;
+Error message: &quot;Cannot find module &apos;/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/packages/icons-react/lib/watson-health/3DCursor.js&apos; from &apos;e2e/icons-react/components-test.js&apos;&quot;
+
+      61 |
+      62 |       expect(() =&gt; {
+    &gt; 63 |         require(commonjs);
+         |         ^
+      64 |       }).not.toThrow();
+      65 |       await expect(import(esm)).resolves.toBeDefined();
+      66 |     }
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:491:11)
+      at require (e2e/icons-react/components-test.js:63:9)
+      at Object.&lt;anonymous&gt; (node_modules/expect/build/toThrowMatchers.js:83:11)
+      at Object.throwingMatcher [as toThrow] (node_modules/expect/build/index.js:342:21)
+      at Object.toThrow (e2e/icons-react/components-test.js:64:14)
+    at Object.toThrow (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/e2e/icons-react/components-test.js:64:14)
+    at Promise.then.completed (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:276:40)
+    at _runTest (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:208:3)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:96:9)
+    at _runTestsForDescribeBlock (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:90:9)
+    at run (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/chrisvelgersdyk/Desktop/carbon-coverall/carbon-coverall-poc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:135:21)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
