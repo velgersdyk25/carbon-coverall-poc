@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Dependencies and test
         run: |
-          yarn install --immutable
+          yarn install --no-immutable
           yarn build
           yarn test
 
