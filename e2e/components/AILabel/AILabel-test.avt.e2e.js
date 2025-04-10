@@ -21,7 +21,6 @@ test.describe('@avt AILabel', () => {
     });
     await expect(page).toHaveNoACViolations('AILabel');
   });
-
   test('@avt-advanced-states open state', async ({ page }) => {
     await visitStory(page, {
       component: 'AILabel',
