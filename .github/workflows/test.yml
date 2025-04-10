@@ -21,7 +21,7 @@ jobs:
         run: |
           yarn install --no-immutable
           yarn build
-          yarn test
+          yarn test:e2e
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.3.6
