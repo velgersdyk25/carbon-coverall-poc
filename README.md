@@ -16,6 +16,9 @@
   <a href="https://github.com/carbon-design-system/carbon/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="Carbon is released under the Apache-2.0 license" />
   </a>
+  <a href="https://codecov.io/gh/velgersdyk25/carbon-coverall-poc" > 
+ <img src="https://codecov.io/gh/velgersdyk25/carbon-coverall-poc/graph/badge.svg?token=IUKEEWMHR6"/> 
+ </a>
   <a href="https://github.com/carbon-design-system/carbon/actions/workflows/ci.yml">
     <img src="https://github.com/carbon-design-system/carbon/actions/workflows/ci.yml/badge.svg" alt="CI workflow status" />
   </a>

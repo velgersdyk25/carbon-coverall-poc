@@ -1,6 +1,6 @@
 on: ["push", "pull_request"]
 
-name: Test Coveralls
+name: Test CodeCov
 
 jobs:
 
@@ -24,6 +24,7 @@ jobs:
           yarn test
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v5.4.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          slug: velgersdyk25/carbon-coverall-poc
