@@ -3,9 +3,8 @@ coverage:
     project: #add everything under here, more options at https://docs.codecov.com/docs/commit-status
       default:
         # basic
-        target: auto #default
-        threshold: 0%
-        base: auto
+        target: 100% #default
+        threshold: 1%
 comment:                  #this is a top-level key
   layout: " diff, flags, files"
   behavior: default
