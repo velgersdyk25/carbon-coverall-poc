@@ -1,9 +1,12 @@
+codecov:
+  branch: main
 coverage:
   status:
     project: #add everything under here, more options at https://docs.codecov.com/docs/commit-status
       default:
         # basic
         target: 100% #default
+        threshold: 5% #default
 comment:                  #this is a top-level key
   layout: " diff, flags, files"
   behavior: default
