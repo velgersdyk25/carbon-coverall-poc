@@ -1,11 +1,13 @@
 coverage:
   status:
     project:
-      default:   # default is the status check's name, not default settings
+      default:
+        enabled: true
         target: 100%
         threshold: 1%
         branches:
           - '!main'
+
 comment:                  #this is a top-level key
   layout: " diff, flags, files"
   behavior: default
