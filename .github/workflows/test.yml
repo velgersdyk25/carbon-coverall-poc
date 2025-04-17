@@ -20,9 +20,10 @@ jobs:
       - name: Install Dependencies and test
         run: |
           yarn install --no-immutable
+          yarn build
           yarn test:e2e
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v5.4.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
