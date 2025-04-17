@@ -3,10 +3,10 @@ coverage:
     project:
       default:
         enabled: true
-        target: 100%
+        target: 100
         threshold: 1%
         branches:
-          - '!main'
+          - "main"
 
 comment:                  #this is a top-level key
   layout: " diff, flags, files"
